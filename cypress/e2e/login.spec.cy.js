@@ -1,4 +1,4 @@
-import userData from '../fixtures/users/userData.json'
+import userData from '../fixtures/userData.json'
 
 describe('Orange HRM Test', () => {
 
@@ -11,7 +11,7 @@ describe('Orange HRM Test', () => {
     wrongCredentialAlert: "[role='alert']"
   }
 
-  t('Login - Success', () => {
+  it('Login - Success', () => {
     
     cy.visit('/auth/login')
     cy.get(selectorList.usernameField).type(userData.userSuccess.username)
